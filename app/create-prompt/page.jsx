@@ -10,7 +10,6 @@ const CreatePrompt = () => {
   
   const router = useRouter();
   const { data: session } = useSession();
-
   const [submitting, setSubmitting] = useState(false);
   const [post, setPost] = useState({
     prompt: '',
@@ -26,12 +25,12 @@ const CreatePrompt = () => {
             method: 'POST',
             body: JSON.stringify({
                 prompt: post.prompt,
-                userId: session?.user._id,
+                userId: session?.user.id,
                 tag: post.tag
             })
         }); 
         if(response.ok){  
-          router.push('/');
+           router.push('/');
         }
     } catch (error) {
         console.log(error);

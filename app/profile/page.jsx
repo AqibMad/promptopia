@@ -9,7 +9,6 @@ import Profile from "@components/Profile";
 const MyProfile = () => {
 
 const { data: session } = useSession();
-
 const [posts, setPosts] = useState([]);
 useEffect(() => {
     const fetchPosts = async () => {
@@ -25,7 +24,7 @@ useEffect(() => {
   const handleEdit = () =>{}
   const handleDelete = async () =>{
   }
-
+  console.log(posts);
   return (
     <Profile
         name="My"
