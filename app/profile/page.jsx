@@ -22,8 +22,8 @@ useEffect(() => {
 },[]);
 
   const handleEdit = () =>{}
-  const handleDelete = async () =>{
-  }
+  const handleDelete = async () =>{}
+  
   return (
     <Profile
         name="My"
