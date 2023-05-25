@@ -24,12 +24,11 @@ useEffect(() => {
   const handleEdit = () =>{}
   const handleDelete = async () =>{
   }
-  console.log(posts);
   return (
     <Profile
         name="My"
         desc="Welcome to your personalized profile page"
-        data={[posts]}
+        data={posts}
         handleEdit={handleEdit}
         handleDelete={handleDelete}
     />
